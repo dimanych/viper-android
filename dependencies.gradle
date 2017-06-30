@@ -1,0 +1,19 @@
+ext.lib = [
+        support    : '25.4.0',
+        constraint : '1.0.2',
+
+        moxy       : '1.5.3',
+
+        dagger     : '2.10',
+        butterknife: '8.5.1',
+        rxBinding  : '2.0.0',
+        rxAndroid  : '2.0.1',
+        rxJava     : '2.0.9',
+        okHttp     : '3.7.0',
+        stream     : '1.1.7',
+        retrofit2  : '2.2.0',
+        cicerone   : '1.1',
+
+        junit      : '4.12',
+        espresso   : '2.2.2'
+]
