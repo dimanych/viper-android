@@ -2,4 +2,6 @@
 
     <string name="app_name">Viper</string>
 
+    <string name="tag">tag</string>
+
 </resources>
