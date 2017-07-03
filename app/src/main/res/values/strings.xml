@@ -2,4 +2,6 @@
 
     <string name="app_name">Viper</string>
 
+    <string name="merge">Merge: changes added</string>
+
 </resources>
