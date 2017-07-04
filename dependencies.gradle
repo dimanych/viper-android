@@ -13,6 +13,10 @@ ext.lib = [
         stream     : '1.1.7',
         retrofit2  : '2.2.0',
         cicerone   : '1.1',
+        leakcanary   : '1.5',
+        room: '1.0.0-alpha3',
+        glide: '4.0.0-RC1',
+        autoParcelJson: '0.1',
 
         junit      : '4.12',
         espresso   : '2.2.2'
