@@ -7,6 +7,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import ru.dimanych.viper.ViperApplication;
+import ru.dimanych.viper.entity.UserSettings;
 import ru.dimanych.viper.util.SharedPreferencesHelper;
 
 /**
@@ -40,5 +41,11 @@ public class AppModule {
         return new SharedPreferencesHelper(
                 context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE)
         );
+    }
+
+    @Provides
+    @Singleton
+    UserSettings provideUserSettings() {
+        return new UserSettings();
     }
 }

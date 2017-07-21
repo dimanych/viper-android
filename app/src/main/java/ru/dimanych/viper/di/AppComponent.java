@@ -14,7 +14,7 @@ import ru.dimanych.viper.di.domain.DomainModule;
  * @author Dmitriy Grigoriev
  */
 @Singleton
-@Component(modules = {AppModule.class, NavigationModule.class})
+@Component(modules = {AppModule.class, NavigationModule.class, ApiModule.class})
 public interface AppComponent {
 
     ActivityComponent plus(ActivityModule activityModule);

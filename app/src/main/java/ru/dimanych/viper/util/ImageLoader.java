@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide;
 
 import javax.inject.Inject;
 
+import static com.bumptech.glide.request.RequestOptions.centerCropTransform;
 import static com.bumptech.glide.request.RequestOptions.circleCropTransform;
 
 public class ImageLoader {
@@ -36,12 +37,18 @@ public class ImageLoader {
                 .into(imageView);
     }
 
-    public void loadImageRounded(@DrawableRes int drawId, ImageView imageView) {
+    public void loadImageCircle(@DrawableRes int drawId, ImageView imageView) {
         Glide.with(context)
                 .load(drawId)
                 .apply(circleCropTransform())
                 .into(imageView);
     }
 
+    public void loadImageCenterCrop(Uri uri, ImageView imageView) {
+        Glide.with(context)
+                .load(uri)
+                .apply(centerCropTransform())
+                .into(imageView);
+    }
 
 }

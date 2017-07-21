@@ -1,5 +1,7 @@
 package ru.dimanych.viper.viper.main;
 
+import android.util.Log;
+
 import io.reactivex.Flowable;
 import ru.dimanych.viper.base.BaseInteractor;
 
@@ -11,6 +13,7 @@ import ru.dimanych.viper.base.BaseInteractor;
 public class MainInteractor extends BaseInteractor {
 
     public Flowable<String> loadData() {
+        Log.d("TAG", "loadData: ran");
         return Flowable.just("MainInteractorData");
     }
 
